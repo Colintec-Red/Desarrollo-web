@@ -1,0 +1,29 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "To check that all the system is set up properly, it is common to use the \"Hello World!\" test.\r\nIn this case, for making an output, we set HTML output and write:\r\n<h1>Hello World!</h1>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>Hello World!</h1>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1>Hello World!</h1>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

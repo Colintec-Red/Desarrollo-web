@@ -1,0 +1,783 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "Forms in html"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    \r\n</form>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Input type text"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Input type submit (don't hit submit, you'll have to reopen the file)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <input type=\"submit\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <input type=\"submit\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Input type reset"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Required attribute with type email"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Input type password"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\"><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\"><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Input type date"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\"><br><br>\r\n    <label for=\"birthdate\">Birthdate:</label>\r\n    <input type=\"date\" id=\"birthdate\"><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\"><br><br>\r",
+                                "    <label for=\"birthdate\">Birthdate:</label>\r",
+                                "    <input type=\"date\" id=\"birthdate\"><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Radio buttons"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\"><br><br>\r\n    <label for=\"birthdate\">Birthdate:</label>\r\n    <input type=\"date\" id=\"birthdate\"><br><br>\r\n    <label>Gender:</label>\r\n    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r\n    <label for=\"male\">Male</label>\r\n    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r\n    <label for=\"female\">Female</label><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\"><br><br>\r",
+                                "    <label for=\"birthdate\">Birthdate:</label>\r",
+                                "    <input type=\"date\" id=\"birthdate\"><br><br>\r",
+                                "    <label>Gender:</label>\r",
+                                "    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r",
+                                "    <label for=\"male\">Male</label>\r",
+                                "    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r",
+                                "    <label for=\"female\">Female</label><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Checkbox"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\"><br><br>\r\n    <label for=\"birthdate\">Birthdate:</label>\r\n    <input type=\"date\" id=\"birthdate\"><br><br>\r\n    <label>Gender:</label>\r\n    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r\n    <label for=\"male\">Male</label>\r\n    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r\n    <label for=\"female\">Female</label><br><br>\r\n    <label for=\"terms\">Accept terms: </label>\r\n    <input type=\"checkbox\" id=\"terms\" required><br><br>\r\n    <label for=\"privacy\">Accept privacy: </label>\r\n    <input type=\"checkbox\" id=\"privacy\" required><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\"><br><br>\r",
+                                "    <label for=\"birthdate\">Birthdate:</label>\r",
+                                "    <input type=\"date\" id=\"birthdate\"><br><br>\r",
+                                "    <label>Gender:</label>\r",
+                                "    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r",
+                                "    <label for=\"male\">Male</label>\r",
+                                "    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r",
+                                "    <label for=\"female\">Female</label><br><br>\r",
+                                "    <label for=\"terms\">Accept terms: </label>\r",
+                                "    <input type=\"checkbox\" id=\"terms\"><br><br>\r",
+                                "    <label for=\"privacy\">Accept privacy: </label>\r",
+                                "    <input type=\"checkbox\" id=\"privacy\"><br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Dropdown menu"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form>\r\n    <label for=\"first_name\">First name:</label>\r\n    <input type=\"text\" id=\"first_name\"><br><br>\r\n    <label for=\"first_name\">Last name:</label>\r\n    <input type=\"text\" id=\"last_name\"><br><br>\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"text\" id=\"email\" required><br><br>\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\"><br><br>\r\n    <label for=\"birthdate\">Birthdate:</label>\r\n    <input type=\"date\" id=\"birthdate\"><br><br>\r\n    <label>Gender:</label>\r\n    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r\n    <label for=\"male\">Male</label>\r\n    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r\n    <label for=\"female\">Female</label><br><br>\r\n    <label for=\"country\">\r\n    <select id=\"country\" name=\"country\">\r\n        <option value=\"spain\">Spain</option>\r\n        <option value=\"italy\">Italy</option>\r\n        <option value=\"frnce\">France</option>\r\n    </select><br><br>\r\n    <label for=\"terms\">Accept terms: </label>\r\n    <input type=\"checkbox\" id=\"terms\" required><br><br>\r\n    <label for=\"privacy\">Accept privacy: </label>\r\n    <input type=\"checkbox\" id=\"privacy\" required><br><br>\r\n    <input type=\"submit\" value=\"Register\">\r\n    <input type=\"reset\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form>\r",
+                                "    <label for=\"first_name\">First name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\"><br><br>\r",
+                                "    <label for=\"first_name\">Last name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\"><br><br>\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"text\" id=\"email\" required><br><br>\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\"><br><br>\r",
+                                "    <label for=\"birthdate\">Birthdate:</label>\r",
+                                "    <input type=\"date\" id=\"birthdate\"><br><br>\r",
+                                "    <label>Gender:</label>\r",
+                                "    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\r",
+                                "    <label for=\"male\">Male</label>\r",
+                                "    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\r",
+                                "    <label for=\"female\">Female</label><br><br>\r",
+                                "    <label for=\"country\">\r",
+                                "    <select id=\"country\" name=\"country\">\r",
+                                "        <option value=\"spain\">Spain</option>\r",
+                                "        <option value=\"italy\">Italy</option>\r",
+                                "        <option value=\"frnce\">France</option>\r",
+                                "    </select><br><br>\r",
+                                "    Accept terms: <input type=\"checkbox\"> Terms<br><br>\r",
+                                "    Accept privacy: <input type=\"checkbox\"> Privacy<br><br>\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "    <input type=\"reset\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let's get assistance from ChatGPT"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Here's the prompt: Create in html a form with the following fields: first name, last name, email, password, birthdate, gender (male and female), country (spain, italy or france) and two checkbox for accepting terms and privacy"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<form action=\"#\" method=\"post\">\r\n    <label for=\"first_name\">First Name:</label>\r\n    <input type=\"text\" id=\"first_name\" name=\"first_name\" required><br><br>\r\n\r\n    <label for=\"last_name\">Last Name:</label>\r\n    <input type=\"text\" id=\"last_name\" name=\"last_name\" required><br><br>\r\n\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"email\" id=\"email\" name=\"email\" required><br><br>\r\n\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\" name=\"password\" required><br><br>\r\n\r\n    <label for=\"birthdate\">Birthdate:</label>\r\n    <input type=\"date\" id=\"birthdate\" name=\"birthdate\" required><br><br>\r\n\r\n    <label>Gender:</label>\r\n    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\" required>\r\n    <label for=\"male\">Male</label>\r\n    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\" required>\r\n    <label for=\"female\">Female</label><br><br>\r\n\r\n    <label for=\"country\">Country:</label>\r\n    <select id=\"country\" name=\"country\" required>\r\n        <option value=\"spain\">Spain</option>\r\n        <option value=\"italy\">Italy</option>\r\n        <option value=\"france\">France</option>\r\n    </select><br><br>\r\n\r\n    <label>\r\n        <input type=\"checkbox\" name=\"terms\" required>\r\n        I accept the terms and conditions\r\n    </label><br>\r\n\r\n    <label>\r\n        <input type=\"checkbox\" name=\"privacy\" required>\r\n        I accept the privacy policy\r\n    </label><br><br>\r\n\r\n    <input type=\"submit\" value=\"Register\">\r\n</form>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<form action=\"#\" method=\"post\">\r",
+                                "    <label for=\"first_name\">First Name:</label>\r",
+                                "    <input type=\"text\" id=\"first_name\" name=\"first_name\" required><br><br>\r",
+                                "\r",
+                                "    <label for=\"last_name\">Last Name:</label>\r",
+                                "    <input type=\"text\" id=\"last_name\" name=\"last_name\" required><br><br>\r",
+                                "\r",
+                                "    <label for=\"email\">Email:</label>\r",
+                                "    <input type=\"email\" id=\"email\" name=\"email\" required><br><br>\r",
+                                "\r",
+                                "    <label for=\"password\">Password:</label>\r",
+                                "    <input type=\"password\" id=\"password\" name=\"password\" required><br><br>\r",
+                                "\r",
+                                "    <label for=\"birthdate\">Birthdate:</label>\r",
+                                "    <input type=\"date\" id=\"birthdate\" name=\"birthdate\" required><br><br>\r",
+                                "\r",
+                                "    <label>Gender:</label>\r",
+                                "    <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\" required>\r",
+                                "    <label for=\"male\">Male</label>\r",
+                                "    <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\" required>\r",
+                                "    <label for=\"female\">Female</label><br><br>\r",
+                                "\r",
+                                "    <label for=\"country\">Country:</label>\r",
+                                "    <select id=\"country\" name=\"country\" required>\r",
+                                "        <option value=\"spain\">Spain</option>\r",
+                                "        <option value=\"italy\">Italy</option>\r",
+                                "        <option value=\"france\">France</option>\r",
+                                "    </select><br><br>\r",
+                                "\r",
+                                "    <label>\r",
+                                "        <input type=\"checkbox\" name=\"terms\" required>\r",
+                                "        I accept the terms and conditions\r",
+                                "    </label><br>\r",
+                                "\r",
+                                "    <label>\r",
+                                "        <input type=\"checkbox\" name=\"privacy\" required>\r",
+                                "        I accept the privacy policy\r",
+                                "    </label><br><br>\r",
+                                "\r",
+                                "    <input type=\"submit\" value=\"Register\">\r",
+                                "</form>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Tables, a good way to structure data"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<table>\r\n    <thead>\r\n      <tr>\r\n        <th>The table header</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>The table body</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<table>\r",
+                                "    <thead>\r",
+                                "      <tr>\r",
+                                "        <th>The table header</th>\r",
+                                "      </tr>\r",
+                                "    </thead>\r",
+                                "    <tbody>\r",
+                                "      <tr>\r",
+                                "        <td>The table body</td>\r",
+                                "      </tr>\r",
+                                "    </tbody>\r",
+                                "  </table>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<table>\r\n    <thead>\r\n      <tr>\r\n        <th colspan=\"2\">Table header</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>Column 1</td>\r\n        <td>Column 2</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<table>\r",
+                                "    <thead>\r",
+                                "      <tr>\r",
+                                "        <th colspan=\"2\">Table header</th>\r",
+                                "      </tr>\r",
+                                "    </thead>\r",
+                                "    <tbody>\r",
+                                "      <tr>\r",
+                                "        <td>Column 1</td>\r",
+                                "        <td>Column 2</td>\r",
+                                "      </tr>\r",
+                                "    </tbody>\r",
+                                "  </table>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<table>\r\n    <thead>\r\n        <tr>\r\n        <th>Countries</th>\r\n        <th>Capitals</th>\r\n        <th>Population</th>\r\n        <th>Language</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr>\r\n        <td>USA</td>\r\n        <td>Washington, D.C.</td>\r\n        <td>309 million</td>\r\n        <td>English</td>\r\n        </tr>\r\n        <tr>\r\n        <td>Sweden</td>\r\n        <td>Stockholm</td>\r\n        <td>9 million</td>\r\n        <td>Swedish</td>\r\n        </tr>\r\n    </tbody>\r\n  </table>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<table>\r",
+                                "    <thead>\r",
+                                "        <tr>\r",
+                                "        <th>Countries</th>\r",
+                                "        <th>Capitals</th>\r",
+                                "        <th>Population</th>\r",
+                                "        <th>Language</th>\r",
+                                "        </tr>\r",
+                                "    </thead>\r",
+                                "    <tbody>\r",
+                                "        <tr>\r",
+                                "        <td>USA</td>\r",
+                                "        <td>Washington, D.C.</td>\r",
+                                "        <td>309 million</td>\r",
+                                "        <td>English</td>\r",
+                                "        </tr>\r",
+                                "        <tr>\r",
+                                "        <td>Sweden</td>\r",
+                                "        <td>Stockholm</td>\r",
+                                "        <td>9 million</td>\r",
+                                "        <td>Swedish</td>\r",
+                                "        </tr>\r",
+                                "    </tbody>\r",
+                                "  </table>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "Let's ask ChatGPT to save us some work"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Here's the prompt: Create in html a table with headers countries, capitals, population and language. Add two rows as example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<table>\r\n    <tr>\r\n      <th>Country</th>\r\n      <th>Capital</th>\r\n      <th>Population</th>\r\n      <th>Language</th>\r\n    </tr>\r\n    <tr>\r\n      <td>Spain</td>\r\n      <td>Madrid</td>\r\n      <td>47 million</td>\r\n      <td>Spanish</td>\r\n    </tr>\r\n    <tr>\r\n      <td>France</td>\r\n      <td>Paris</td>\r\n      <td>67 million</td>\r\n      <td>French</td>\r\n    </tr>\r\n    <tr>\r\n      <td>Italy</td>\r\n      <td>Rome</td>\r\n      <td>60 million</td>\r\n      <td>Italian</td>\r\n    </tr>\r\n  </table>\r\n  "
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<table>\r",
+                                "    <tr>\r",
+                                "      <th>Country</th>\r",
+                                "      <th>Capital</th>\r",
+                                "      <th>Population</th>\r",
+                                "      <th>Language</th>\r",
+                                "    </tr>\r",
+                                "    <tr>\r",
+                                "      <td>Spain</td>\r",
+                                "      <td>Madrid</td>\r",
+                                "      <td>47 million</td>\r",
+                                "      <td>Spanish</td>\r",
+                                "    </tr>\r",
+                                "    <tr>\r",
+                                "      <td>France</td>\r",
+                                "      <td>Paris</td>\r",
+                                "      <td>67 million</td>\r",
+                                "      <td>French</td>\r",
+                                "    </tr>\r",
+                                "    <tr>\r",
+                                "      <td>Italy</td>\r",
+                                "      <td>Rome</td>\r",
+                                "      <td>60 million</td>\r",
+                                "      <td>Italian</td>\r",
+                                "    </tr>\r",
+                                "  </table>\r",
+                                "  "
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Because thead and tbody was not included, the format is not 100% correct"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Semantic elements, organise the website with an structure that robots can understand"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<img src=\"https://res.cloudinary.com/dmq9pzw0o/image/upload/v1588487285/semantic-html-what-how-why/Clipboard_2020-04-27-01-57-36_ntjtvc.png\" height=600/><br>\r\n<a href=\"https://www.w3schools.com/html/html5_semantic_elements.asp\">HTML Semantic elements</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<img src=\"https://res.cloudinary.com/dmq9pzw0o/image/upload/v1588487285/semantic-html-what-how-why/Clipboard_2020-04-27-01-57-36_ntjtvc.png\" height=600/><br>\r",
+                                "<a href=\"https://www.w3schools.com/html/html5_semantic_elements.asp\">HTML Semantic elements</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- This should be the minimum structure of a well defined web -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>\r\n\r\n    </title>\r\n</head>\r\n<body>\r\n    <nav>\r\n\r\n    </nav>\r\n\r\n    <!-- As many sections as needed -->\r\n    <section>\r\n\r\n    </section>\r\n    \r\n    <footer>\r\n\r\n    </footer>\r\n    \r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let's ask ChatGPT: Write in html a page that uses the semantic elements"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>My Web Page</title>\r\n  </head>\r\n  <body>\r\n    <header>\r\n      <h1>Welcome to my web page</h1>\r\n      <nav>\r\n        <ul>\r\n          <li><a href=\"#\">Home</a></li>\r\n          <li><a href=\"#\">About</a></li>\r\n          <li><a href=\"#\">Contact</a></li>\r\n        </ul>\r\n      </nav>\r\n    </header>\r\n\r\n    <main>\r\n      <section>\r\n        <h2>About me</h2>\r\n        <p>I'm a web developer from Spain.</p>\r\n      </section>\r\n\r\n      <section>\r\n        <h2>My projects</h2>\r\n        <article>\r\n          <h3>Project 1</h3>\r\n          <p>This is a description of project 1.</p>\r\n        </article>\r\n\r\n        <article>\r\n          <h3>Project 2</h3>\r\n          <p>This is a description of project 2.</p>\r\n        </article>\r\n\r\n        <article>\r\n          <h3>Project 3</h3>\r\n          <p>This is a description of project 3.</p>\r\n        </article>\r\n\r\n      </section>\r\n\r\n      <section>\r\n        <h2>Contact me</h2>\r\n\r\n        <form action=\"/contact\" method=\"post\">\r\n          <label for=\"name\">Name:</label><br />\r\n          <input type=\"text\" id=\"name\" name=\"name\" /><br />\r\n\r\n          <label for=\"email\">Email:</label><br />\r\n          <input type=\"email\" id=\"email\" name=\"email\" /><br />\r\n\r\n          <label for=\"message\">Message:</label><br />\r\n          <textarea id=\"message\" name=\"message\"></textarea><br />\r\n\r\n          <button type=\"submit\">Send message</button>\r\n\r\n        </form>\r\n\r\n      </section>\r\n\r\n    </main>\r\n\r\n    <footer>© My Company 2023</footer>\r\n\r\n  </body>\r\n</html>\r\n\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html>\r",
+                                "  <head>\r",
+                                "    <title>My Web Page</title>\r",
+                                "  </head>\r",
+                                "  <body>\r",
+                                "    <header>\r",
+                                "      <h1>Welcome to my web page</h1>\r",
+                                "      <nav>\r",
+                                "        <ul>\r",
+                                "          <li><a href=\"#\">Home</a></li>\r",
+                                "          <li><a href=\"#\">About</a></li>\r",
+                                "          <li><a href=\"#\">Contact</a></li>\r",
+                                "        </ul>\r",
+                                "      </nav>\r",
+                                "    </header>\r",
+                                "\r",
+                                "    <main>\r",
+                                "      <section>\r",
+                                "        <h2>About me</h2>\r",
+                                "        <p>I'm a web developer from Spain.</p>\r",
+                                "      </section>\r",
+                                "\r",
+                                "      <section>\r",
+                                "        <h2>My projects</h2>\r",
+                                "        <article>\r",
+                                "          <h3>Project 1</h3>\r",
+                                "          <p>This is a description of project 1.</p>\r",
+                                "        </article>\r",
+                                "\r",
+                                "        <article>\r",
+                                "          <h3>Project 2</h3>\r",
+                                "          <p>This is a description of project 2.</p>\r",
+                                "        </article>\r",
+                                "\r",
+                                "        <article>\r",
+                                "          <h3>Project 3</h3>\r",
+                                "          <p>This is a description of project 3.</p>\r",
+                                "        </article>\r",
+                                "\r",
+                                "      </section>\r",
+                                "\r",
+                                "      <section>\r",
+                                "        <h2>Contact me</h2>\r",
+                                "\r",
+                                "        <form action=\"/contact\" method=\"post\">\r",
+                                "          <label for=\"name\">Name:</label><br />\r",
+                                "          <input type=\"text\" id=\"name\" name=\"name\" /><br />\r",
+                                "\r",
+                                "          <label for=\"email\">Email:</label><br />\r",
+                                "          <input type=\"email\" id=\"email\" name=\"email\" /><br />\r",
+                                "\r",
+                                "          <label for=\"message\">Message:</label><br />\r",
+                                "          <textarea id=\"message\" name=\"message\"></textarea><br />\r",
+                                "\r",
+                                "          <button type=\"submit\">Send message</button>\r",
+                                "\r",
+                                "        </form>\r",
+                                "\r",
+                                "      </section>\r",
+                                "\r",
+                                "    </main>\r",
+                                "\r",
+                                "    <footer>© My Company 2023</footer>\r",
+                                "\r",
+                                "  </body>\r",
+                                "</html>\r",
+                                "\r",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Divisors and spans, the way to provide styles to parts of the web"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div>\r\n    <p>Some text</p>\r\n    <p>With common style</p>\r\n</div>\r\n<p>Some text <span>with some special style</span> and some more text</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div>\r",
+                                "    <p>Some text</p>\r",
+                                "    <p>With common style</p>\r",
+                                "</div>\r",
+                                "<p>Some text <span>with some special style</span> and some more text</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

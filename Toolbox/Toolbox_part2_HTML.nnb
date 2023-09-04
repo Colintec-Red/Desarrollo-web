@@ -1,0 +1,535 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "The root of all webs"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Select HTML and write html, select html:5"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html>\r",
+                                "    <head>\r",
+                                "        <title></title>\r",
+                                "    </head>\r",
+                                "    <body>\r",
+                                "    </body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "We'll review the most common tags to use with html."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Check this link for a whole list of html tags</p>\r\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element\">HTML elements reference</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Check this link for a whole list of html tags</p>\r",
+                                "<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element\">HTML elements reference</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Headers"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>Header h1</h1>\r\n<h2>Header h2</h2>\r\n<h3>Header h3</h3>\r\n<h4>Header h4</h4>\r\n<h5>Header h5</h5>\r\n<h6>Header h6</h6>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1>Header h1</h1>\r",
+                                "<h2>Header h2</h2>\r",
+                                "<h3>Header h3</h3>\r",
+                                "<h4>Header h4</h4>\r",
+                                "<h5>Header h5</h5>\r",
+                                "<h6>Header h6</h6>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Paragraph"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Hello, I'm a paragraph</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Hello, I'm a paragraph</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Unstructured text (do not use!, always use some tag)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "Some text\r\nSome more text\r\nMuch more text"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "Some text\r",
+                                "Some more text\r",
+                                "Much more text"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Fill text with lorem <p>Lorem</p> and press enter"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe corporis sapiente odit facere, eligendi fuga soluta, consectetur veniam asperiores ratione molestiae possimus sit sequi tempore commodi expedita. Consequatur, animi beatae.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe corporis sapiente odit facere, eligendi fuga soluta, consectetur veniam asperiores ratione molestiae possimus sit sequi tempore commodi expedita. Consequatur, animi beatae.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Bold text within a paragraph"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Consectetur voluptates sunt ipsam nihil</strong>, suscipit accusamus provident sapiente eum fugit et! Ad, assumenda iste. Quaerat, fugiat optio nobis quidem nostrum expedita.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Consectetur voluptates sunt ipsam nihil</strong>, suscipit accusamus provident sapiente eum fugit et! Ad, assumenda iste. Quaerat, fugiat optio nobis quidem nostrum expedita.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "Italic text within a paragraph (emphasis)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Sapiente, temporibus?</em> Quia impedit voluptatem repellendus quas! Maiores voluptate, aliquid, cum numquam soluta nobis, libero aspernatur beatae inventore necessitatibus quibusdam ipsa quo.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Sapiente, temporibus?</em> Quia impedit voluptatem repellendus quas! Maiores voluptate, aliquid, cum numquam soluta nobis, libero aspernatur beatae inventore necessitatibus quibusdam ipsa quo.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ordered list"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<ol>\r\n    <li>First issue</li>\r\n    <li>Second issue</li>\r\n    <li>Third issue</li>\r\n</ol>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<ol>\r",
+                                "    <li>First issue</li>\r",
+                                "    <li>Second issue</li>\r",
+                                "    <li>Third issue</li>\r",
+                                "</ol>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Unordered list"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<ul>\r\n    <li>Some issue</li>\r\n    <li>Another issue</li>\r\n    <li>Final issue</li>\r\n</ul>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<ul>\r",
+                                "    <li>Some issue</li>\r",
+                                "    <li>Another issue</li>\r",
+                                "    <li>Final issue</li>\r",
+                                "</ul>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Nested list"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<ol>\r\n    <li>First issue</li>\r\n    <ul>\r\n        <li>Some issue</li>\r\n        <li>Another issue</li>\r\n        <li>Final issue</li>\r\n    </ul>\r\n    <li>Second issue</li>\r\n    <li>Third issue</li>\r\n</ol>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<ol>\r",
+                                "    <li>First issue</li>\r",
+                                "    <ul>\r",
+                                "        <li>Some issue</li>\r",
+                                "        <li>Another issue</li>\r",
+                                "        <li>Final issue</li>\r",
+                                "    </ul>\r",
+                                "    <li>Second issue</li>\r",
+                                "    <li>Third issue</li>\r",
+                                "</ol>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Self closing tags: Line break"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Some text</p>\r\n<br>\r\n<p>Some more text</p>\r\n<p>Additional <br>text</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Some text</p>\r",
+                                "<br>\r",
+                                "<p>Some more text</p>\r",
+                                "<p>Additional <br>text</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Horizontal line"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Some text</p>\r\n<hr>\r\n<p>Some more text</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Some text</p>\r",
+                                "<hr>\r",
+                                "<p>Some more text</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Images!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<img src=\"https://www.colintec.net/static/img/colintec_white.svg\" alt=\"Colintec logo\" width=\"200\">\r\n<img src=\"https://www.colintec.net/static/img/colintec_black.svg\" alt=\"Colintec logo\" height=\"50\">"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<img src=\"https://www.colintec.net/static/img/colintec_white.svg\" alt=\"Colintec logo\" width=\"200\">\r",
+                                "<img src=\"https://www.colintec.net/static/img/colintec_black.svg\" alt=\"Colintec logo\" height=\"50\">"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Anchor tag, the power of linking makes internet what it is!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Next is a link to the company <a href=\"https://www.colintec.net\">COLINTEC</a></p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Next is a link to the company <a href=\"https://www.colintec.net\">COLINTEC</a></p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Comments on html"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Next is a comment</p>\r\n<!-- This is a comment and it will be disregarded by the browser-->\r\n<p>After the comment</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Next is a comment</p>\r",
+                                "<!-- This is a comment and it will be disregarded by the browser-->\r",
+                                "<p>After the comment</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let's build our first web!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\"> \r\n    <head>\r\n        <meta charset=\"UTF-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>My first web</title>\r\n    </head>\r\n    <body>\r\n        <h1>The greatest web in the world!</h1>\r\n        <p>Yes, it is this web, and it's mine</p>\r\n        <p>Here are the reasons:</p>\r\n        <ul>\r\n            <li>It is made by me</li>\r\n            <li>I made it myself</li>\r\n            <li>And it is just awesome</li>\r\n        </ul>\r\n        <h3>Don't dare to correct me</h3>\r\n        <img src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1425312172i/13875298._SX540_.jpg\" height=\"200\"/>\r\n    </body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\"> \r",
+                                "    <head>\r",
+                                "        <meta charset=\"UTF-8\">\r",
+                                "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "        <title>My first web</title>\r",
+                                "    </head>\r",
+                                "    <body>\r",
+                                "        <h1>The greatest web in the world!</h1>\r",
+                                "        <p>Yes, it is this web, and it's mine</p>\r",
+                                "        <p>Here are the reasons:</p>\r",
+                                "        <ul>\r",
+                                "            <li>It is made by me</li>\r",
+                                "            <li>I made it myself</li>\r",
+                                "            <li>And it is just awesome</li>\r",
+                                "        </ul>\r",
+                                "        <h3>Don't dare to correct me</h3>\r",
+                                "        <img src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1425312172i/13875298._SX540_.jpg\" height=\"200\"/>\r",
+                                "    </body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let's create an html file and copy the code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Exercise!!!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Create the following web</p>\r\n<img src=\"https://www.oreilly.com/api/v2/epubs/9781449337513/files/httpatomoreillycomsourceoreillyimages2257995.png\"/>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Create the following web</p>\r",
+                                "<img src=\"https://www.oreilly.com/api/v2/epubs/9781449337513/files/httpatomoreillycomsourceoreillyimages2257995.png\"/>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "The link for the image is here: http://learningwebdesign.com/4e/materials/chapter04/bistro/blackgoose.png"
+            ],
+            "outputs": []
+        }
+    ]
+}

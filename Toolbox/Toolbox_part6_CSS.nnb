@@ -1,0 +1,172 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "Display positioning, individual positioning of elements"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/position\">Diplay position reference guide</a>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Defaul position is static</p>\r\n<p>The element is positioned according to the normal flow of the document</p>\r\n<div class=\"box\" id=\"one\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">One</div>\r\n<div class=\"box\" id=\"two\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">Two</div>\r\n<div class=\"box\" id=\"three\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">Three</div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Position relative is in relation to its default position, any of left, top, right or bottom is necessary to move the element from default position</p>\r\n<p>The element is positioned according to the normal flow of the document</p>\r\n<div class=\"box\" id=\"one\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">One</div>\r\n<div class=\"box\" id=\"two\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: relative; left: 20px; bottom: 5px;\">Two</div>\r\n<div class=\"box\" id=\"three\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">Three</div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Position absolute is in relation to its parent position, any of left, top, right or bottom is necessary   to move the element from parent position</p>\r\n<p>The parent must have position relative and the element is removed from the normal document flow</p>\r\n<div style=\"position: relative;\">\r\n    <div class=\"box\" id=\"one\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">One</div>\r\n    <div class=\"box\" id=\"two\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: absolute; left: 20px; top: 15px;\">Two</div>\r\n    <div class=\"box\" id=\"three\" style=\"width: 100px; height: 100px; background: red; color: white; margin: 10px; position: static\">Three</div>\r\n</div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>An element with position fixed is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled</p>\r\n<p>The element is removed from the normal document flow</p>\r\n<p>It can't be display in this notebook</p>\r\n<a href=\"https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed\">Position fixed example</a>\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>An element with position sticky is positioned based on the user's scroll position.</p>\r\n<p>The element is positioned according to the normal flow of the document</p>\r\n<p>It can't be display in this notebook</p>\r\n<a href=\"https://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky\">Position sticky example</a>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Round borders and shadows"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"background-color: white; height: 300px; width: 200px; padding: 30px;\">\r\n    <div style=\"background-color: pink; widht: 100%; height: 100%; border-radius: 10px; border: solid 1px grey; box-shadow: 10px 10px 2px 1px rgba(0,0,0, 0.2);\">\r\n\r\n    </div>\r\n</div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Transitions and transformations"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://thoughtbot.com/blog/transitions-and-transforms\">Transitions and transformations reference guide</a>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        #background-container {\r\n            background-color: white; \r\n            height: 300px; \r\n            width: 200px; \r\n            padding: 30px;            \r\n        }\r\n\r\n        #main-container{\r\n            background-color: pink; \r\n            height: 300px; \r\n            width: 200px; \r\n            border-radius: 10px; \r\n            border: solid 1px grey;\r\n            transition: all 1s;\r\n        }\r\n\r\n        #main-container:hover {\r\n            transform: scale(1.1);\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div id=\"background-container\">\r\n        <div id=\"main-container\">\r\n    \r\n        </div>\r\n    </div>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        #background-container {\r\n            background-color: white; \r\n            height: 300px; \r\n            width: 200px; \r\n            padding: 30px;            \r\n        }\r\n\r\n        #primary-container{\r\n            background-color: pink;\r\n            position: absolute;\r\n            height: 300px; \r\n            width: 200px; \r\n            border-radius: 10px; \r\n            border: solid 1px grey;\r\n            transition: all 1s;\r\n        }\r\n        #secondary-container{\r\n            background-color: lightgray;\r\n            position: absolute;\r\n            height: 300px; \r\n            width: 200px; \r\n            border-radius: 10px; \r\n            transition: all 1s;\r\n        }\r\n\r\n        #primary-container:hover {\r\n            transform: translate(10px, 10px);\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div id=\"background-container\">\r\n        <div id=\"secondary-container\">\r\n    \r\n        </div>\r\n        <div id=\"primary-container\">\r\n    \r\n        </div>\r\n    </div>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        #squared-background-container {\r\n            background-color: white; \r\n            height: 300px; \r\n            width: 300px; \r\n            padding: 80px;            \r\n        }\r\n\r\n        #squared-container{\r\n            background-color: pink; \r\n            height: 300px; \r\n            width: 300px; \r\n            border-radius: 10px; \r\n            border: solid 1px grey;\r\n            transition: all 2s 1s ease;\r\n        }\r\n\r\n        #squared-container:hover {\r\n            transform: rotate(180deg);\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div id=\"squared-background-container\">\r\n        <div id=\"squared-container\">\r\n    \r\n        </div>\r\n    </div>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Arranging content, the power of flex box"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Reference guide</p>\r\n<p style=\"background-color: orange; color: black; font-weight: bold; padding: 10px;\">Attention! It is really important to understand the difference between parent and child element</p>\r\n<a href=\"https://css-tricks.com/snippets/css/a-guide-to-flexbox/\" >CSS Flexbox guide</a>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "\r\n<!DOCTYPE html>\r\n<html lang=\"en-us\">\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width\">\r\n    <title>Flexbox 0 — starting code</title>\r\n    <style>\r\n\r\n      #main_title {\r\n        background: purple;\r\n        height: 100px;\r\n        text-align: center;\r\n        line-height: 100px;\r\n        color: white;\r\n      }\r\n\r\n      .main_article {\r\n        padding: 10px;\r\n        margin: 10px;\r\n        background: aqua;\r\n      }\r\n\r\n      .main_article h2 {\r\n        color: black;\r\n      }\r\n\r\n      .main_article p {\r\n        color: black;\r\n      }\r\n      \r\n    </style>\r\n  </head>\r\n  <body>\r\n    <header>\r\n      <h1 id=\"main_title\">Sample flexbox example</h1>\r\n    </header>\r\n\r\n    <section>\r\n      <article class=\"main_article\">\r\n        <h2>First article</h2>\r\n\r\n        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n      </article>\r\n\r\n      <article class=\"main_article\">\r\n        <h2>Second article</h2>\r\n\r\n        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n      </article>\r\n\r\n      <article class=\"main_article\">\r\n        <button>Smile</button>\r\n        <button>Laugh</button>\r\n        <button>Wink</button>\r\n        <button>Shrug</button>\r\n        <button>Blush</button>\r\n\r\n        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n\r\n        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>\r\n      </article>\r\n    </section>\r\n  </body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>We look for the following design</p>\r\n<img src=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox/flexbox-example7.png\"/>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "\r\n<!DOCTYPE html>\r\n<html lang=\"en-us\">\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width\">\r\n    <title>Flexbox 0 — starting code</title>\r\n    <style>\r\n\r\n      #main_title {\r\n        background: purple;\r\n        height: 100px;\r\n        text-align: center;\r\n        line-height: 100px;\r\n        color: white;\r\n      }\r\n\r\n      /* We add a div with display flex (flex box) */\r\n      #article_container{\r\n        display: flex;\r\n      }\r\n      \r\n\r\n      .main_article {\r\n        padding: 10px;\r\n        margin: 10px;\r\n        background: aqua;\r\n      }\r\n\r\n      .main_article h2 {\r\n        color: black;\r\n      }\r\n\r\n      .main_article p {\r\n        color: black;\r\n      }\r\n      \r\n    </style>\r\n  </head>\r\n  <body>\r\n    <header>\r\n      <h1 id=\"main_title\">Sample flexbox example</h1>\r\n    </header>\r\n\r\n    <section>\r\n      <!-- div that contains all articles, we could've used section instead-->\r\n        <div id=\"article_container\">\r\n            <article class=\"main_article\">\r\n                <h2>First article</h2>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n            </article>\r\n\r\n            <article class=\"main_article\">\r\n                <h2>Second article</h2>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n            </article>\r\n\r\n            <article class=\"main_article\">\r\n                <button>Smile</button>\r\n                <button>Laugh</button>\r\n                <button>Wink</button>\r\n                <button>Shrug</button>\r\n                <button>Blush</button>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n\r\n                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>\r\n            </article>\r\n        </div>\r\n    </section>\r\n  </body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "\r\n<!DOCTYPE html>\r\n<html lang=\"en-us\">\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width\">\r\n    <title>Flexbox 0 — starting code</title>\r\n    <style>\r\n\r\n      #main_title {\r\n        background: purple;\r\n        height: 100px;\r\n        text-align: center;\r\n        line-height: 100px;\r\n        color: white;\r\n      }\r\n\r\n      /* We add a div with display flex (flex box) */\r\n      #article_container{\r\n        display: flex;\r\n      }\r\n\r\n      /* We add a div with display flex (flex box) with wrap property and gap of 10px*/\r\n      #button_container{\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n        gap: 10px;\r\n      }\r\n\r\n      /* Styles of all buttons that are within a button_container div */\r\n      #button_container button{\r\n        flex-grow: 1;\r\n        padding: 10px;\r\n      }\r\n\r\n      /* Style of last button with id button_container_last, because is not a child of a flex element, we need to provida standard CSS properties */\r\n      #button_container_last{\r\n        width: 100%;\r\n        padding: 10px;\r\n        margin: 10px 0px;\r\n      }\r\n      \r\n\r\n      .main_article {\r\n        padding: 10px;\r\n        margin: 10px;\r\n        background: aqua;\r\n      }\r\n\r\n      .main_article h2 {\r\n        color: black;\r\n      }\r\n\r\n      .main_article p {\r\n        color: black;\r\n      }\r\n      \r\n    </style>\r\n  </head>\r\n  <body>\r\n    <header>\r\n      <h1 id=\"main_title\">Sample flexbox example</h1>\r\n    </header>\r\n\r\n    <section>\r\n      <!-- div that contains all articles, we could've used section instead-->\r\n        <div id=\"article_container\">\r\n            <article class=\"main_article\">\r\n                <h2>First article</h2>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n            </article>\r\n\r\n            <article class=\"main_article\">\r\n                <h2>Second article</h2>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n            </article>\r\n\r\n            <article class=\"main_article\">\r\n                <div id=\"button_container\">\r\n                  <button>Smile</button>\r\n                  <button>Laugh</button>\r\n                  <button>Wink</button>\r\n                  <button>Shrug</button>\r\n                </div>\r\n                <button id=\"button_container_last\">Blush</button>\r\n\r\n                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>\r\n\r\n                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>\r\n            </article>\r\n        </div>\r\n    </section>\r\n  </body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Let's learn while playing!</p>\r\n<a href=\"https://flexboxfroggy.com/\">Flex froggy game</a>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "EXERCISE!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Apply the corresponding CSS styles to make it look like this:</p>\r\n<img src=\"https://www.quackit.com/pix/css/flexbox/examples/flexbox_cards_align-items_stretch.png\"/>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <main>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/23m.jpg\" alt=\"Sample photo\">\r\n          <div>\r\n            <h3>Seamlessly visualize quality</h3>\r\n            <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>\r\n            <button>Here's why</button>\r\n          </div>\r\n        </article>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/24m.jpg\" alt=\"Sample photo\">\r\n          <div class=\"text\">\r\n            <h3>Completely Synergize</h3>\r\n            <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>\r\n            <button>Here's how</button>\r\n          </div>\r\n        </article>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/22l.jpg\" alt=\"Sample photo\">\r\n          <div>\r\n            <h3>Dynamically Procrastinate</h3>\r\n            <p>Completely synergize resource taxing relationships via premier niche markets.</p>\r\n            <button>Read more</button>\r\n          </div>\r\n        </article>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/15l.jpg\" alt=\"Sample photo\">\r\n          <div >\r\n            <h3>Best in class</h3>\r\n            <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>\r\n            <button>Just do it...</button>\r\n          </div>\r\n        </article>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/25m.jpg\" alt=\"Sample photo\">\r\n          <div>\r\n            <h3>Dynamically innovate supply chains</h3>\r\n            <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>\r\n            <button>Here's why</button>\r\n          </div>\r\n        </article>\r\n        <article>\r\n          <img src=\"https://www.quackit.com/pix/samples/16l.jpg\" alt=\"Sample photo\">\r\n          <div>\r\n            <h3>Sanity check</h3>\r\n            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>\r\n            <button>Stop here</button>\r\n          </div>\r\n        </article>\r\n      </main>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        }
+    ]
+}

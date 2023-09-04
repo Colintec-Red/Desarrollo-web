@@ -1,0 +1,222 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "Internal CSS styling (not very common)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>Internal CSS styling</h1></h1>\r\n<p>Advantages:</p>\r\n<ul>\r\n    <li>You can use class and ID selectors in this style sheet.</li>\r\n    <li>Since you'll only add the code within the same HTML file, you don't need to upload multiple files.</li>\r\n</ul>\r\n<p>Disadvantages:</p>\r\n<ul>\r\n    <li>Adding the code to the HTML document can increase the page's size and loading time.</li>\r\n</ul>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "CSS Style selectors"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Generic elements (only use in specific situations, not recommended)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        h1 {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        p {\r\n            font-style: italic;\r\n            color: orange;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1>This is a title</h1>\r\n    <p>This is a paragraph</p>\r\n    <h1>This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Using identifiers (when style only apply to one item)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        #title1 {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        #paragraph1{\r\n            font-style: italic;\r\n            color: orange;\r\n        }\r\n        #title2 {\r\n            background-color: blue;\r\n            text-align: left;\r\n        }\r\n        #paragraph2{\r\n            color: red;\r\n            text-align: center;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 id=\"title1\">This is a title</h1>\r\n    <p id=\"paragraph1\">This is a paragraph</p>\r\n    <h1 id=\"title2\">This is another title</h1>\r\n    <p id=\"paragraph2\">This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Using class (most used and recommended)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        .main_title {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        .main_paragraph{\r\n            font-style: italic;\r\n            color: orange;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 class=\"main_title\">This is a title</h1>\r\n    <p class=\"main_paragraph\">This is a paragraph</p>\r\n    <h1 class=\"main_title\">This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://css-tricks.com/almanac/selectors/\">List of selectors</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://css-tricks.com/almanac/selectors/\">List of selectors</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Order matters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        .main_title {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        .main_title{\r\n            color: red;\r\n        }\r\n        .main_paragraph{\r\n            font-style: italic;\r\n            color: orange;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 class=\"main_title\">This is a title</h1>\r\n    <p class=\"main_paragraph\">This is a paragraph</p>\r\n    <h1 class=\"main_title\">This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Adding more than one class"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        .main_title {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        .italic{\r\n            font-style: italic;\r\n        }\r\n        .main_paragraph{\r\n            color: orange;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 class=\"main_title italic\">This is a title</h1>\r\n    <p class=\"main_paragraph italic\">This is a paragraph</p>\r\n    <h1 class=\"main_title\">This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        .main_title, .secondary_title {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        .secondary_title {\r\n            font-weight:lighter;\r\n        }\r\n        .main_paragraph{\r\n            color: orange;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 class=\"main_title\">This is a title</h1>\r\n    <p class=\"main_paragraph\">This is a paragraph</p>\r\n    <h1 class=\"secondary_title\">This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Hover identifier"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style>\r\n        .main_title, .secondary_title {\r\n            background-color: grey;\r\n            color: pink;\r\n            text-align: center;\r\n        }\r\n        .secondary_title:hover {\r\n            font-weight:lighter;\r\n            cursor: pointer;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 class=\"main_title\">This is a title</h1>\r\n    <p>This is a paragraph</p>\r\n    <h1 class=\"secondary_title\">This is another title</h1>\r\n    <p>This is another paragraph</p>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <style>\r",
+                                "        .main_title, .secondary_title {\r",
+                                "            background-color: grey;\r",
+                                "            color: pink;\r",
+                                "            text-align: center;\r",
+                                "        }\r",
+                                "        .secondary_title:hover {\r",
+                                "            font-weight:lighter;\r",
+                                "            cursor: pointer;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <h1 class=\"main_title\">This is a title</h1>\r",
+                                "    <p>This is a paragraph</p>\r",
+                                "    <h1 class=\"secondary_title\">This is another title</h1>\r",
+                                "    <p>This is another paragraph</p>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "EXERCISE!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://css-diner.netlify.app/\">CSS selectors game</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://css-diner.netlify.app/\">CSS selectors game</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "External CSS styling (most common and recommended)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <!-- We add a link to the file that contains CSS styles with extension .css -->\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> \r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "We can add as many files as we want (important! the order of the files matters, last file has priority)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <!-- We add a link to as many files as needed with extension .css -->\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"header.css\" /> \r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"main_content.css\" /> \r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"footer.css\" /> \r\n    <!-- Last file has priority, if there is a conflict between selectors, the one in the last file applies -->\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        }
+    ]
+}

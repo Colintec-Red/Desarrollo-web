@@ -1,0 +1,493 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "Let's review the main Bootstrap components"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Navbar"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <nav class=\"navbar navbar-expand-lg bg-body-tertiary\">\r\n        <div class=\"container-fluid\">\r\n          <a class=\"navbar-brand\" href=\"#\">Navbar</a>\r\n          <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n          </button>\r\n          <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n            <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Link</a>\r\n              </li>\r\n              <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\r\n                  Dropdown\r\n                </a>\r\n                <ul class=\"dropdown-menu\">\r\n                  <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\r\n                  <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\r\n                  <li><hr class=\"dropdown-divider\"></li>\r\n                  <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\r\n                </ul>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\r\n              </li>\r\n            </ul>\r\n            <form class=\"d-flex\" role=\"search\">\r\n              <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\r\n              <button class=\"btn btn-outline-success\" type=\"submit\">Search</button>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </nav>\r\n      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Let's customize the navbar by adding a logo, centering the links and adding icons -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <!-- We have to add another link for icons to work -->\r\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        .bi-custom {\r\n          font-size: 30px;\r\n          margin: 0px 10px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <nav class=\"navbar navbar-expand-lg bg-body-tertiary\">\r\n        <div class=\"container-fluid\">\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img src=\"https://www.colintec.net/static/img/colintec_black.svg\" alt=\"Logo\" width=\"150\" height=\"50\" class=\"d-inline-block align-text-top\">\r\n              </a>\r\n          <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n          </button>\r\n          <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" style=\"align-self: center;\">\r\n            <ul class=\"navbar-nav me-auto mb-2 mb-lg-0 ms-auto\">\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" aria-current=\"page\" href=\"#\">HOME</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" aria-current=\"page\" href=\"#\">SERVICES</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" aria-current=\"page\" href=\"#\">ABOUT US</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" aria-current=\"page\" href=\"#\">CONTACT</a>\r\n              </li>\r\n            </ul>\r\n            <i class=\"bi bi-tiktok bi-custom \"></i>\r\n            <i class=\"bi bi-twitter bi-custom \"></i>\r\n            <i class=\"bi bi-facebook bi-custom \"></i>\r\n          </div>\r\n        </div>\r\n      </nav>\r\n      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Buttons"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <button type=\"button\" class=\"btn btn-primary\">Primary</button>\r\n    <button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\r\n    <button type=\"button\" class=\"btn btn-success\">Success</button>\r\n    <button type=\"button\" class=\"btn btn-danger\">Danger</button>\r\n    <button type=\"button\" class=\"btn btn-warning\">Warning</button>\r\n    <button type=\"button\" class=\"btn btn-info\">Info</button>\r\n    <button type=\"button\" class=\"btn btn-light\">Light</button>\r\n    <button type=\"button\" class=\"btn btn-dark\">Dark</button>\r\n\r\n    <button type=\"button\" class=\"btn btn-link\">Link</button>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Cards"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"card\" style=\"width: 18rem;\">\r\n        <div class=\"card-body\">\r\n          <h5 class=\"card-title\">Card title</h5>\r\n          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n          <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Tables"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <table class=\"table table-striped table-hover\">\r\n            <thead>\r\n                <tr>\r\n                  <th scope=\"col\">#</th>\r\n                  <th scope=\"col\">First</th>\r\n                  <th scope=\"col\">Last</th>\r\n                  <th scope=\"col\">Handle</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody>\r\n                <tr>\r\n                  <th scope=\"row\">1</th>\r\n                  <td>Mark</td>\r\n                  <td>Otto</td>\r\n                  <td>@mdo</td>\r\n                </tr>\r\n                <tr>\r\n                  <th scope=\"row\">2</th>\r\n                  <td>Jacob</td>\r\n                  <td>Thornton</td>\r\n                  <td>@fat</td>\r\n                </tr>\r\n                <tr>\r\n                  <th scope=\"row\">3</th>\r\n                  <td>Larry the Bird</td>\r\n                  <td colspan=\"2\">@twitter</td>\r\n                </tr>\r\n              </tbody>\r\n          </table>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"container\">\r",
+                                "        <table class=\"table table-striped table-hover\">\r",
+                                "            <thead>\r",
+                                "                <tr>\r",
+                                "                  <th scope=\"col\">#</th>\r",
+                                "                  <th scope=\"col\">First</th>\r",
+                                "                  <th scope=\"col\">Last</th>\r",
+                                "                  <th scope=\"col\">Handle</th>\r",
+                                "                </tr>\r",
+                                "              </thead>\r",
+                                "              <tbody>\r",
+                                "                <tr>\r",
+                                "                  <th scope=\"row\">1</th>\r",
+                                "                  <td>Mark</td>\r",
+                                "                  <td>Otto</td>\r",
+                                "                  <td>@mdo</td>\r",
+                                "                </tr>\r",
+                                "                <tr>\r",
+                                "                  <th scope=\"row\">2</th>\r",
+                                "                  <td>Jacob</td>\r",
+                                "                  <td>Thornton</td>\r",
+                                "                  <td>@fat</td>\r",
+                                "                </tr>\r",
+                                "                <tr>\r",
+                                "                  <th scope=\"row\">3</th>\r",
+                                "                  <td>Larry the Bird</td>\r",
+                                "                  <td colspan=\"2\">@twitter</td>\r",
+                                "                </tr>\r",
+                                "              </tbody>\r",
+                                "          </table>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Forms"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <!-- We have to add another link for icons to work -->\r\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        form {\r\n            background-color: white;\r\n            padding: 10px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n  <form>\r\n    <div class=\"mb-3\">\r\n      <label for=\"exampleInputEmail1\" class=\"form-label\">Email address</label>\r\n      <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\">\r\n      <div id=\"emailHelp\" class=\"form-text\">We'll never share your email with anyone else.</div>\r\n    </div>\r\n    <div class=\"mb-3\">\r\n      <label for=\"exampleInputPassword1\" class=\"form-label\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\">\r\n    </div>\r\n    <div class=\"mb-3 form-check\">\r\n      <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\r\n      <label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html> "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Carousel"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <!-- We have to add another link for icons to work -->\r\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        #carouselExample {\r\n          height: 300px;\r\n          width: 500px;\r\n        }\r\n        .carousel-item img {\r\n          height: 300px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div id=\"carouselExample\" class=\"carousel slide\">\r\n        <div class=\"carousel-inner\">\r\n          <div class=\"carousel-item active\">\r\n            <img src=\"https://www.quackit.com/pix/samples/15l.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img src=\"https://www.quackit.com/pix/samples/25m.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img src=\"https://www.quackit.com/pix/samples/16l.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r\n          </div>\r\n        </div>\r\n        <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"prev\">\r\n          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"visually-hidden\">Previous</span>\r\n        </button>\r\n        <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"next\">\r\n          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"visually-hidden\">Next</span>\r\n        </button>\r\n      </div>\r\n      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html> "
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <!-- We have to add another link for icons to work -->\r",
+                                "    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "        #carouselExample {\r",
+                                "          height: 300px;\r",
+                                "          width: 500px;\r",
+                                "        }\r",
+                                "        .carousel-item img {\r",
+                                "          height: 300px;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div id=\"carouselExample\" class=\"carousel slide\">\r",
+                                "        <div class=\"carousel-inner\">\r",
+                                "          <div class=\"carousel-item active\">\r",
+                                "            <img src=\"https://www.quackit.com/pix/samples/15l.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r",
+                                "          </div>\r",
+                                "          <div class=\"carousel-item\">\r",
+                                "            <img src=\"https://www.quackit.com/pix/samples/25m.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r",
+                                "          </div>\r",
+                                "          <div class=\"carousel-item\">\r",
+                                "            <img src=\"https://www.quackit.com/pix/samples/16l.jpg\" class=\"d-block w-100 img-fluid\" alt=\"...\">\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "        <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"prev\">\r",
+                                "          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r",
+                                "          <span class=\"visually-hidden\">Previous</span>\r",
+                                "        </button>\r",
+                                "        <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"next\">\r",
+                                "          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r",
+                                "          <span class=\"visually-hidden\">Next</span>\r",
+                                "        </button>\r",
+                                "      </div>\r",
+                                "      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html> "
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Accordion"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <div class=\"accordion\" id=\"accordionExample\">\r\n            <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\">\r\n                <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\r\n                Accordion Item #1\r\n                </button>\r\n            </h2>\r\n            <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" data-bs-parent=\"#accordionExample\">\r\n                <div class=\"accordion-body\">\r\n                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r\n                </div>\r\n            </div>\r\n            </div>\r\n            <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\">\r\n                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\r\n                Accordion Item #2\r\n                </button>\r\n            </h2>\r\n            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordionExample\">\r\n                <div class=\"accordion-body\">\r\n                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r\n                </div>\r\n            </div>\r\n            </div>\r\n            <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\">\r\n                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\r\n                Accordion Item #3\r\n                </button>\r\n            </h2>\r\n            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordionExample\">\r\n                <div class=\"accordion-body\">\r\n                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r\n                </div>\r\n            </div>\r\n            </div>\r\n        </div>\r\n                \r\n    </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"container\">\r",
+                                "        <div class=\"accordion\" id=\"accordionExample\">\r",
+                                "            <div class=\"accordion-item\">\r",
+                                "            <h2 class=\"accordion-header\">\r",
+                                "                <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\r",
+                                "                Accordion Item #1\r",
+                                "                </button>\r",
+                                "            </h2>\r",
+                                "            <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" data-bs-parent=\"#accordionExample\">\r",
+                                "                <div class=\"accordion-body\">\r",
+                                "                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r",
+                                "                </div>\r",
+                                "            </div>\r",
+                                "            </div>\r",
+                                "            <div class=\"accordion-item\">\r",
+                                "            <h2 class=\"accordion-header\">\r",
+                                "                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\r",
+                                "                Accordion Item #2\r",
+                                "                </button>\r",
+                                "            </h2>\r",
+                                "            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordionExample\">\r",
+                                "                <div class=\"accordion-body\">\r",
+                                "                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r",
+                                "                </div>\r",
+                                "            </div>\r",
+                                "            </div>\r",
+                                "            <div class=\"accordion-item\">\r",
+                                "            <h2 class=\"accordion-header\">\r",
+                                "                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\r",
+                                "                Accordion Item #3\r",
+                                "                </button>\r",
+                                "            </h2>\r",
+                                "            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordionExample\">\r",
+                                "                <div class=\"accordion-body\">\r",
+                                "                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\r",
+                                "                </div>\r",
+                                "            </div>\r",
+                                "            </div>\r",
+                                "        </div>\r",
+                                "                \r",
+                                "    </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Interactive components - Dropdowns, Modals and Toasts (require adding javascript linked file)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Utilities"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Flexbox and border -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        .flex-container{\r\n            width: 300px; \r\n            height: 100px; \r\n            background-color: lightblue;\r\n        }\r\n        .flex-box-item{\r\n            background-color: pink;\r\n        }\r\n\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"d-flex flex-container\">\r\n        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container justify-content-between\">\r\n        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container flex-column justify-content-between\">\r\n        <div class=\"border flex-box-item\">Flex item 1</div>\r\n        <div class=\"border flex-box-item\">Flex item 2</div>\r\n        <div class=\"border flex-box-item\">Flex item 3</div>           \r\n    </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Flexbox and border -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "        .flex-container{\r",
+                                "            width: 300px; \r",
+                                "            height: 100px; \r",
+                                "            background-color: lightblue;\r",
+                                "        }\r",
+                                "        .flex-box-item{\r",
+                                "            background-color: pink;\r",
+                                "        }\r",
+                                "\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"d-flex flex-container\">\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container justify-content-between\">\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container flex-column justify-content-between\">\r",
+                                "        <div class=\"border flex-box-item\">Flex item 1</div>\r",
+                                "        <div class=\"border flex-box-item\">Flex item 2</div>\r",
+                                "        <div class=\"border flex-box-item\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Hiding and opacity -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        .flex-container{\r\n            width: 300px; \r\n            height: 100px; \r\n            background-color: lightblue;\r\n        }\r\n        .flex-box-item{\r\n            background-color: pink;\r\n        }\r\n\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"d-flex flex-container\">\r\n        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r\n        <div class=\"p-2 border flex-box-item opacity-75\">Flex item 2</div>\r\n        <!-- Visible only on ms an down-->\r\n        <div class=\"p-2 border flex-box-item opacity-25 d-md-none\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container justify-content-between\">\r\n        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r\n        <!-- Visible only on md an up-->\r\n        <div class=\"p-2 border flex-box-item opacity-75 d-none d-md-block\">Flex item 2</div>\r\n        <div class=\"p-2 border flex-box-item opacity-25\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container flex-column justify-content-between\">\r\n        <div class=\"border flex-box-item\">Flex item 1</div>\r\n        <!-- Visible only on lg-->\r\n        <div class=\"border flex-box-item opacity-75 d-none d-lg-block d-xl-none\">Flex item 2</div>\r\n        <div class=\"border flex-box-item opacity-25\">Flex item 3</div>           \r\n    </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Hiding and opacity -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "        .flex-container{\r",
+                                "            width: 300px; \r",
+                                "            height: 100px; \r",
+                                "            background-color: lightblue;\r",
+                                "        }\r",
+                                "        .flex-box-item{\r",
+                                "            background-color: pink;\r",
+                                "        }\r",
+                                "\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"d-flex flex-container\">\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r",
+                                "        <div class=\"p-2 border flex-box-item opacity-75\">Flex item 2</div>\r",
+                                "        <!-- Visible only on ms an down-->\r",
+                                "        <div class=\"p-2 border flex-box-item opacity-25 d-md-none\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container justify-content-between\">\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 1</div>\r",
+                                "        <!-- Visible only on md an up-->\r",
+                                "        <div class=\"p-2 border flex-box-item opacity-75 d-none d-md-block\">Flex item 2</div>\r",
+                                "        <div class=\"p-2 border flex-box-item opacity-25\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container flex-column justify-content-between\">\r",
+                                "        <div class=\"border flex-box-item\">Flex item 1</div>\r",
+                                "        <!-- Visible only on lg-->\r",
+                                "        <div class=\"border flex-box-item opacity-75 d-none d-lg-block d-xl-none\">Flex item 2</div>\r",
+                                "        <div class=\"border flex-box-item opacity-25\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Margin and padding -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{\r\n            background-color: transparent;\r\n        }\r\n        .flex-container{\r\n            width: 300px; \r\n            height: 100px; \r\n            background-color: lightblue;\r\n        }\r\n        .flex-box-item{\r\n            background-color: pink;\r\n        }\r\n\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"d-flex flex-container p-2\">\r\n        <div class=\"p-2 border flex-box-item m-2\">Flex item 1</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container justify-content-between px-3\">\r\n        <div class=\"p-2 border flex-box-item mx-3\">Flex item 1</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r\n        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r\n    </div>\r\n    <div class=\"d-flex flex-container flex-column justify-content-between py-1\">\r\n        <div class=\"border flex-box-item my-1\">Flex item 1</div>\r\n        <div class=\"border flex-box-item opacity-75\">Flex item 2</div>\r\n        <div class=\"border flex-box-item opacity-25\">Flex item 3</div>           \r\n    </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Margin and padding -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{\r",
+                                "            background-color: transparent;\r",
+                                "        }\r",
+                                "        .flex-container{\r",
+                                "            width: 300px; \r",
+                                "            height: 100px; \r",
+                                "            background-color: lightblue;\r",
+                                "        }\r",
+                                "        .flex-box-item{\r",
+                                "            background-color: pink;\r",
+                                "        }\r",
+                                "\r",
+                                "    </style>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"d-flex flex-container p-2\">\r",
+                                "        <div class=\"p-2 border flex-box-item m-2\">Flex item 1</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container justify-content-between px-3\">\r",
+                                "        <div class=\"p-2 border flex-box-item mx-3\">Flex item 1</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 2</div>\r",
+                                "        <div class=\"p-2 border flex-box-item\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <div class=\"d-flex flex-container flex-column justify-content-between py-1\">\r",
+                                "        <div class=\"border flex-box-item my-1\">Flex item 1</div>\r",
+                                "        <div class=\"border flex-box-item opacity-75\">Flex item 2</div>\r",
+                                "        <div class=\"border flex-box-item opacity-25\">Flex item 3</div>           \r",
+                                "    </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

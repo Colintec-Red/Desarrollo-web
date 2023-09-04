@@ -1,0 +1,589 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "Let's give style to our webs!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Inline CSS styling (only for testing and really small webs)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>My first page</h1>\r\n<p>Hello world!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1>My first page</h1>\r",
+                                "<p>Hello world!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1 style=\"background-color: blue\">My first page</h1>\r\n<p style=\"color: red; font-style: italic;\">Hello world!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1 style=\"background-color: blue\">My first page</h1>\r",
+                                "<p style=\"color: red; font-style: italic;\">Hello world!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>List of CSS properties</h1>\r\n<a href=\"https://css-tricks.com/almanac/properties/\">Full list</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1>List of CSS properties</h1>\r",
+                                "<a href=\"https://css-tricks.com/almanac/properties/\">Full list</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"text-align: center;\">This text is align in the center</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"text-align: center;\">This text is align in the center</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"text-align: center; border: solid pink;\">This text is align in the center with a pink solid border</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"text-align: center; border: solid pink;\">This text is align in the center with a pink solid border</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg);\">\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg);\">\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg); background-size:contain;\">\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg); background-size:contain;\">\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg); background-size:contain; background-repeat: no-repeat; background-color: white; background-position: center;\">\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"height: 300px; background-image: url(https://www.colintec.net/static/img/developer_outline_II.svg); background-size:contain; background-repeat: no-repeat; background-color: white; background-position: center;\">\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<ul>\r\n    <li>First item</li>\r\n    <li>Second item</li>\r\n</ul>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<ul>\r",
+                                "    <li>First item</li>\r",
+                                "    <li>Second item</li>\r",
+                                "</ul>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<ul style=\"list-style: none;\">\r\n    <li>First item</li>\r\n    <li>Second item</li>\r\n</ul>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<ul style=\"list-style: none;\">\r",
+                                "    <li>First item</li>\r",
+                                "    <li>Second item</li>\r",
+                                "</ul>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1 style=\"cursor: pointer;\">Cursor change to pointer on hovering</h1>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1 style=\"cursor: pointer;\">Cursor change to pointer on hovering</h1>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let's personalize colors!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://paletton.com/\">Color palete generator</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://paletton.com/\">Color palete generator</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"background-color: #845EC2; border-radius: 10px; border: rgba(176, 168, 185, 0.5) solid;\">\r\n    <h1 style=\"text-align: center;\">My webpage</h1>\r\n    <p style=\"text-align: center;\">The greatest in the world</p>\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"background-color: #845EC2; border-radius: 10px; border: rgba(176, 168, 185, 0.5) solid;\">\r",
+                                "    <h1 style=\"text-align: center;\">My webpage</h1>\r",
+                                "    <p style=\"text-align: center;\">The greatest in the world</p>\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Personalizing text"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"text-decoration: underline;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatum ratione quasi explicabo omnis, dicta iure voluptates cumque expedita dolorem corrupti ex dignissimos vitae doloribus error dolores temporibus ab quod!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"text-decoration: underline;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatum ratione quasi explicabo omnis, dicta iure voluptates cumque expedita dolorem corrupti ex dignissimos vitae doloribus error dolores temporibus ab quod!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"text-decoration: line-through;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias illo quas iste animi quia ab numquam tempore corrupti ipsam natus odio vitae exercitationem quos consequatur, nobis tenetur inventore corporis?</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"text-decoration: line-through;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias illo quas iste animi quia ab numquam tempore corrupti ipsam natus odio vitae exercitationem quos consequatur, nobis tenetur inventore corporis?</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"text-transform: uppercase;\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, illum. Doloremque ut ipsum quidem magni asperiores similique distinctio, dicta eum fugiat quam praesentium temporibus esse reiciendis delectus fuga, voluptatibus architecto!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"text-transform: uppercase;\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, illum. Doloremque ut ipsum quidem magni asperiores similique distinctio, dicta eum fugiat quam praesentium temporibus esse reiciendis delectus fuga, voluptatibus architecto!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style=\"text-transform: uppercase;\">Autem esse non natus cumque ad odio ipsam,</span>  laborum suscipit cupiditate hic repellat quia minima? Nisi, nostrum mollitia? Voluptas dolorem labore laboriosam?</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style=\"text-transform: uppercase;\">Autem esse non natus cumque ad odio ipsam,</span>  laborum suscipit cupiditate hic repellat quia minima? Nisi, nostrum mollitia? Voluptas dolorem labore laboriosam?</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"background-color: blue;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum eveniet aut repudiandae at mollitia illum, quia ad totam odio, sed dicta odit blanditiis asperiores impedit, exercitationem perferendis quasi eius.</p>\r\n<p style=\"background-color: blue; line-height: 50px;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum eveniet aut repudiandae at mollitia illum, quia ad totam odio, sed dicta odit blanditiis asperiores impedit, exercitationem perferendis quasi eius.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"background-color: blue;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum eveniet aut repudiandae at mollitia illum, quia ad totam odio, sed dicta odit blanditiis asperiores impedit, exercitationem perferendis quasi eius.</p>\r",
+                                "<p style=\"background-color: blue; line-height: 50px;\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum eveniet aut repudiandae at mollitia illum, quia ad totam odio, sed dicta odit blanditiis asperiores impedit, exercitationem perferendis quasi eius.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"font-weight: bold;\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolorem ut ullam temporibus nulla molestias harum totam, perferendis ducimus porro maxime consequatur blanditiis aspernatur, consequuntur voluptas nam officia expedita! Eos!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"font-weight: bold;\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolorem ut ullam temporibus nulla molestias harum totam, perferendis ducimus porro maxime consequatur blanditiis aspernatur, consequuntur voluptas nam officia expedita! Eos!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>\r\n<p style=\"font-size: 50%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>\r\n<p style=\"font-size: 130%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>\r",
+                                "<p style=\"font-size: 50%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>\r",
+                                "<p style=\"font-size: 130%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores, blanditiis eos dicta, eius modi magni dolorem aut nulla saepe quo sint natus non in optio officiis eligendi inventore quod.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia molestias consequuntur sequi error, odio, corporis voluptas similique blanditiis ipsa inventore eaque eos, culpa quod voluptate magnam? Illo a deleniti iste.</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia molestias consequuntur sequi error, odio, corporis voluptas similique blanditiis ipsa inventore eaque eos, culpa quod voluptate magnam? Illo a deleniti iste.</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1 style=\"text-align: center;\">This is a text with an image around it</h1>\r\n<img src=\"https://www.colintec.net/static/img/developer_outline_II.svg\" width=\"500\" style=\"background-color: white; float: left;\"/>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1 style=\"text-align: center;\">This is a text with an image around it</h1>\r",
+                                "<img src=\"https://www.colintec.net/static/img/developer_outline_II.svg\" width=\"500\" style=\"background-color: white; float: left;\"/>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"font-size: 20px;\"><span style=\"font-size: 2em\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Magni aspernatur quia architecto, provident, voluptatibus vero at dolores aut laboriosam harum facilis cum fugit culpa aperiam. Laboriosam nobis repellendus adipisci voluptate?</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"font-size: 20px;\"><span style=\"font-size: 2em\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Magni aspernatur quia architecto, provident, voluptatibus vero at dolores aut laboriosam harum facilis cum fugit culpa aperiam. Laboriosam nobis repellendus adipisci voluptate?</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Spacing, the box model"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<img src=\"https://miro.medium.com/v2/resize:fit:720/format:webp/1*E_YuB8x1B3T3h6PIJ_I9qQ.png\"/>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<img src=\"https://miro.medium.com/v2/resize:fit:720/format:webp/1*E_YuB8x1B3T3h6PIJ_I9qQ.png\"/>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1 style=\"text-align: center;\">This is a text with an image around it</h1>\r\n<img src=\"https://www.colintec.net/static/img/developer_outline_II.svg\" width=\"500\" style=\"background-color: white; float: left; margin: 10px;\"/>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r\n<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1 style=\"text-align: center;\">This is a text with an image around it</h1>\r",
+                                "<img src=\"https://www.colintec.net/static/img/developer_outline_II.svg\" width=\"500\" style=\"background-color: white; float: left; margin: 10px;\"/>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>\r",
+                                "<p style=\"font-size: 150%\">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus pariatur nemo? Voluptatem hic molestias porro et saepe assumenda ducimus sint eius debitis suscipit. Omnis quibusdam ipsa eaque molestias corrupti!</p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"border: solid 2px;\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>\r\n<div style=\"border: solid 2px; padding: 10px;\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>\r\n<div style=\"border: solid 2px; padding: 10px; margin: 10px;\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>\r\n<div style=\"border: solid 2px; padding: 10px; margin-top: 10px; margin-bottom: 10px;\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>\r\n\r\n<div style=\"border: solid 2px; padding: 10px; margin: 10px 0px 10px 0px;\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>\r\n<div style=\"border: solid 2px; padding: 10px; margin: 10px 0px\">\r\n    <h1>Title</h1>\r\n    <p>Some text</p>\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"border: solid 2px;\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>\r",
+                                "<div style=\"border: solid 2px; padding: 10px;\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>\r",
+                                "<div style=\"border: solid 2px; padding: 10px; margin: 10px;\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>\r",
+                                "<div style=\"border: solid 2px; padding: 10px; margin-top: 10px; margin-bottom: 10px;\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>\r",
+                                "\r",
+                                "<div style=\"border: solid 2px; padding: 10px; margin: 10px 0px 10px 0px;\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>\r",
+                                "<div style=\"border: solid 2px; padding: 10px; margin: 10px 0px\">\r",
+                                "    <h1>Title</h1>\r",
+                                "    <p>Some text</p>\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<h1>Inline CSS styling</h1></h1>\r\n<p>Advantages:</p>\r\n<ul>\r\n    <li>You can easily and quickly insert CSS rules into an HTML page. That's why this method is useful for testing or previewing the changes and performing quick fixes to your website.</li>\r\n    <li>You don't need to create and upload a separate document as in the external style.</li>\r\n</ul>\r\n<p>Disadvantages:</p>\r\n<ul>\r\n    <li>Adding CSS rules to every HTML element is time-consuming and makes your HTML structure messy.</li>\r\n    <li>Styling multiple elements can affect your page's size and download time.</li>\r\n</ul>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<h1>Inline CSS styling</h1></h1>\r",
+                                "<p>Advantages:</p>\r",
+                                "<ul>\r",
+                                "    <li>You can easily and quickly insert CSS rules into an HTML page. That’s why this method is useful for testing or previewing the changes and performing quick fixes to your website.</li>\r",
+                                "    <li>You don’t need to create and upload a separate document as in the external style.</li>\r",
+                                "</ul>\r",
+                                "<p>Disadvantages:</p>\r",
+                                "<ul>\r",
+                                "    <li>Adding CSS rules to every HTML element is time-consuming and makes your HTML structure messy.</li>\r",
+                                "    <li>Styling multiple elements can affect your page’s size and download time.</li>\r",
+                                "</ul>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

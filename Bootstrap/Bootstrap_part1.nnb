@@ -1,0 +1,507 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "The goodnes of frameworks, Bootstrap for web development"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://getbootstrap.com/\">Bootstrap</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://getbootstrap.com/\">Bootstrap</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <!-- We add a link to the css file that is posted online -->\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <!-- Bootstrap comes with prebuild background-color for body, we may need to replace it -->\r\n    <style>\r\n        body{ background-color: transparent;}\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <!-- For some components to work properly, mainly interactive components such as dropdowns, we need to add a link to the javascript file that is posted online -->\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <!-- We add a link to the css file that is posted online -->\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <!-- Bootstrap comes with prebuild background-color for body, we may need to replace it -->\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <!-- For some components to work properly, mainly interactive components such as dropdowns, we need to add a link to the javascript file that is posted online -->\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Bootstrap example of a card -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <div class=\"card\" style=\"width: 18rem;\">\r\n        <div class=\"card-body\">\r\n          <h5 class=\"card-title\">Card title</h5>\r\n          <h6 class=\"card-subtitle mb-2 text-body-secondary\">Card subtitle</h6>\r\n          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n          <a href=\"#\" class=\"card-link\">Card link</a>\r\n          <a href=\"#\" class=\"card-link\">Another link</a>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Bootstrap example of a card -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"card\" style=\"width: 18rem;\">\r",
+                                "        <div class=\"card-body\">\r",
+                                "          <h5 class=\"card-title\">Card title</h5>\r",
+                                "          <h6 class=\"card-subtitle mb-2 text-body-secondary\">Card subtitle</h6>\r",
+                                "          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r",
+                                "          <a href=\"#\" class=\"card-link\">Card link</a>\r",
+                                "          <a href=\"#\" class=\"card-link\">Another link</a>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- We can replace default style easily, it is better to add a new class than change the original class -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n        .card-title-modified{\r\n          color: pink;\r\n        }\r\n        .card-link-modified {\r\n          background-color:chocolate ;\r\n          padding: 10px;\r\n          border-radius: 5px;\r\n          text-decoration: none;\r\n          color: black;\r\n        }\r\n        .card-link-modified:hover {\r\n          color: white;\r\n        }\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <div class=\"card\" style=\"width: 18rem;\">\r\n        <div class=\"card-body\">\r\n          <h5 class=\"card-title card-title-modified\">Card title</h5>\r\n          <h6 class=\"card-subtitle mb-2 text-body-secondary\">Card subtitle</h6>\r\n          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n          <a href=\"#\" class=\"card-link card-link-modified\">Card link</a>\r\n          <a href=\"#\" class=\"card-link card-link-modified\">Another link</a>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- We can replace default style easily, it is better to add a new class than change the original class -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "        .card-title-modified{\r",
+                                "          color: pink;\r",
+                                "        }\r",
+                                "        .card-link-modified {\r",
+                                "          background-color:chocolate ;\r",
+                                "          padding: 10px;\r",
+                                "          border-radius: 5px;\r",
+                                "          text-decoration: none;\r",
+                                "          color: black;\r",
+                                "        }\r",
+                                "        .card-link-modified:hover {\r",
+                                "          color: white;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"card\" style=\"width: 18rem;\">\r",
+                                "        <div class=\"card-body\">\r",
+                                "          <h5 class=\"card-title card-title-modified\">Card title</h5>\r",
+                                "          <h6 class=\"card-subtitle mb-2 text-body-secondary\">Card subtitle</h6>\r",
+                                "          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r",
+                                "          <a href=\"#\" class=\"card-link card-link-modified\">Card link</a>\r",
+                                "          <a href=\"#\" class=\"card-link card-link-modified\">Another link</a>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Responsive web design"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://www.colintec.net\">Colintec responsibe web design example</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://www.colintec.net\">Colintec responsibe web design example</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "Bootstrap comes to the rescue!"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "Bootstrap comes to the rescue!"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<a href=\"https://getbootstrap.com/docs/5.3/layout/grid/\">Bootstrap grid system</a>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<a href=\"https://getbootstrap.com/docs/5.3/layout/grid/\">Bootstrap grid system</a>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Same width column system -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n        .row div{\r\n            background-color: grey;\r\n            border: 2px solid pink;\r\n        }\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <div class=\"container text-center\">\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            1 of 2\r\n          </div>\r\n          <div class=\"col\">\r\n            2 of 2\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            1 of 3\r\n          </div>\r\n          <div class=\"col\">\r\n            2 of 3\r\n          </div>\r\n          <div class=\"col\">\r\n            3 of 3\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Same width column system -->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "        .row div{\r",
+                                "            background-color: grey;\r",
+                                "            border: 2px solid pink;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"container text-center\">\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col\">\r",
+                                "            1 of 2\r",
+                                "          </div>\r",
+                                "          <div class=\"col\">\r",
+                                "            2 of 2\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col\">\r",
+                                "            1 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col\">\r",
+                                "            2 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col\">\r",
+                                "            3 of 3\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Custom width column system (12 per row)-->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n        .row div{\r\n            background-color: grey;\r\n            border: 2px solid pink;\r\n        }\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <div class=\"container text-center\">\r\n        <div class=\"row\">\r\n          <div class=\"col-8\">\r\n            1 of 2\r\n          </div>\r\n          <div class=\"col-4\">\r\n            2 of 2\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col-3\">\r\n            1 of 3\r\n          </div>\r\n          <div class=\"col-7\">\r\n            2 of 3\r\n          </div>\r\n          <div class=\"col-2\">\r\n            3 of 3\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Custom width column system (12 per row)-->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "        .row div{\r",
+                                "            background-color: grey;\r",
+                                "            border: 2px solid pink;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"container text-center\">\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col-8\">\r",
+                                "            1 of 2\r",
+                                "          </div>\r",
+                                "          <div class=\"col-4\">\r",
+                                "            2 of 2\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col-3\">\r",
+                                "            1 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-7\">\r",
+                                "            2 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-2\">\r",
+                                "            3 of 3\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<div style=\"background-color: white;\">\r\n    <p>The grid system has five classes:</p>\r\n    <ul>\r\n        <li>.col-xs (extra small devices – screen width less than 576px)</li>\r\n        <li>.col-sm- (small devices – screen width equal to or greater than 576px)</li>\r\n        <li>.col-md- (medium devices – screen width equal to or greater than 768px)</li>\r\n        <li>.col-lg- (large devices – screen width equal to or greater than 992px)</li>\r\n        <li>.col-xl- (xlarge devices – screen width equal to or greater than 1200px)</li>\r\n        <li>.col-xxl- (xxlarge devices – screen width equal to or greater than 1400px)</li>\r\n    </ul>\r\n</div>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<div style=\"background-color: white;\">\r",
+                                "    <p>The grid system has five classes:</p>\r",
+                                "    <ul>\r",
+                                "        <li>.col-xs (extra small devices – screen width less than 576px)</li>\r",
+                                "        <li>.col-sm- (small devices – screen width equal to or greater than 576px)</li>\r",
+                                "        <li>.col-md- (medium devices – screen width equal to or greater than 768px)</li>\r",
+                                "        <li>.col-lg- (large devices – screen width equal to or greater than 992px)</li>\r",
+                                "        <li>.col-xl- (xlarge devices – screen width equal to or greater than 1200px)</li>\r",
+                                "        <li>.col-xxl- (xxlarge devices – screen width equal to or greater than 1400px)</li>\r",
+                                "    </ul>\r",
+                                "</div>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- Responsive column system (12 per row)-->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n        .row div{\r\n            background-color: grey;\r\n            border: 2px solid pink;\r\n        }\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n    <div class=\"container text-center\">\r\n        <div class=\"row\">\r\n          <div class=\"col-sm-12 col-lg-3\">\r\n            1 of 3\r\n          </div>\r\n          <div class=\"col-sm-12 col-lg-7\">\r\n            2 of 3\r\n          </div>\r\n          <div class=\"col-sm-12 col-lg-2\">\r\n            3 of 3\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- Responsive column system (12 per row)-->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "        .row div{\r",
+                                "            background-color: grey;\r",
+                                "            border: 2px solid pink;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "    <div class=\"container text-center\">\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col-sm-12 col-lg-3\">\r",
+                                "            1 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-sm-12 col-lg-7\">\r",
+                                "            2 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-sm-12 col-lg-2\">\r",
+                                "            3 of 3\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Use containers, they adapt to viewport (on big screens provides padding and clears padding on small screens)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<!-- A container is able to contain, pad, and align your content within a given device or viewport-->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r\n    <style>\r\n        body{ background-color: transparent;}\r\n        .row div{\r\n            background-color: grey;\r\n            border: 2px solid pink;\r\n        }\r\n    </style>\r\n  </head>\r\n</head>\r\n<body>\r\n      <h1 style=\"background-color: white; text-align: center;\">For full width use container-fluid</h1>\r\n      <div class=\"container-fluid text-center\">\r\n        <div class=\"row\">\r\n          <div class=\"col-sm-12 col-lg-3\">\r\n            1 of 3\r\n          </div>\r\n          <div class=\"col-sm-12 col-lg-7\">\r\n            2 of 3\r\n          </div>\r\n          <div class=\"col-sm-12 col-lg-2\">\r\n            3 of 3\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<!-- A container is able to contain, pad, and align your content within a given device or viewport.-->\r",
+                                "<!DOCTYPE html>\r",
+                                "<html lang=\"en\">\r",
+                                "<head>\r",
+                                "    <meta charset=\"UTF-8\">\r",
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r",
+                                "    <title>Document</title>\r",
+                                "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\r",
+                                "    <style>\r",
+                                "        body{ background-color: transparent;}\r",
+                                "        .row div{\r",
+                                "            background-color: grey;\r",
+                                "            border: 2px solid pink;\r",
+                                "        }\r",
+                                "    </style>\r",
+                                "  </head>\r",
+                                "</head>\r",
+                                "<body>\r",
+                                "      <h1 style=\"background-color: white; text-align: center;\">For full width use container-fluid</h1>\r",
+                                "      <div class=\"container-fluid text-center\">\r",
+                                "        <div class=\"row\">\r",
+                                "          <div class=\"col-sm-12 col-lg-3\">\r",
+                                "            1 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-sm-12 col-lg-7\">\r",
+                                "            2 of 3\r",
+                                "          </div>\r",
+                                "          <div class=\"col-sm-12 col-lg-2\">\r",
+                                "            3 of 3\r",
+                                "          </div>\r",
+                                "        </div>\r",
+                                "      </div>\r",
+                                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\r",
+                                "</body>\r",
+                                "</html>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Exercise!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "html",
+            "source": [
+                "<p style=\"background-color: white;\">Take your previous exercise text and images and create a website using Bootstrap cards and grid with three cards per row in a large screen, two in a medium screen an one on a small</p>\r\n<img src=\"https://www.quackit.com/pix/css/flexbox/examples/flexbox_cards_align-items_stretch.png\"/>"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/html",
+                            "value": [
+                                "<p style=\"background-color: white;\">Take your previous exercise text and images and create a website using Bootstrap cards and grid with three cards per row in a large screen, two in a medium screen an one on a small</p>\r",
+                                "<img src=\"https://www.quackit.com/pix/css/flexbox/examples/flexbox_cards_align-items_stretch.png\"/>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
